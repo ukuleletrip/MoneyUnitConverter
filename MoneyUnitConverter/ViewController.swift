@@ -8,6 +8,27 @@
 
 import UIKit
 
+
+@IBDesignable class MoneyTypePad2: UIView {
+    
+    @IBOutlet weak var languageSelector: UISegmentedControl!
+    @IBOutlet weak var jUnit1Selector: UISegmentedControl!
+    @IBOutlet weak var jUnit2Selector: UISegmentedControl!
+    @IBOutlet weak var eUnit1Selector: UISegmentedControl!
+    @IBOutlet weak var eUnit2Selector: UISegmentedControl!
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    @IBAction func languageChanged(_ sender: Any) {
+    }
+}
+
 class ResultHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,12 +46,28 @@ class CurrencyResultsCell: UITableViewCell {
     @IBOutlet weak var rateInfo: UILabel!
 }
 
+@IBDesignable class TenkeyButton: UIButton {
+    @IBInspectable var cornerRadius: CGFloat = 0.0
+    @IBInspectable var borderColor: UIColor = UIColor.clear
+    @IBInspectable var borderWidth: CGFloat = 0.0
+    
+    override func draw(_ rect: CGRect) {
+        self.layer.cornerRadius = cornerRadius
+        self.clipsToBounds = (cornerRadius > 0)
+        
+        self.layer.borderColor = borderColor.cgColor
+        self.layer.borderWidth = borderWidth
+        
+        super.draw(rect)
+    }
+}
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var currencyTitle: UINavigationItem!
     @IBOutlet weak var inputField: UILabel!
     @IBOutlet weak var resultHeader: ResultHeaderView!
-    @IBOutlet weak var typePad: UIView!
+    @IBOutlet weak var typePad: MoneyTypePad!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,5 +93,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     @IBAction func toggleResultMode(_ sender: Any) {
     }
+
 }
 

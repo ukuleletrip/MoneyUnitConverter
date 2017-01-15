@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6032C4891E2BA96100BF6D8A /* MoneyTypePad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6032C4881E2BA96100BF6D8A /* MoneyTypePad.xib */; };
+		6032C48B1E2BAC9500BF6D8A /* MoneyTypePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6032C48A1E2BAC9500BF6D8A /* MoneyTypePad.swift */; };
 		605722F91E20A10C00286F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605722F81E20A10C00286F3B /* AppDelegate.swift */; };
 		605722FB1E20A10C00286F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605722FA1E20A10C00286F3B /* ViewController.swift */; };
 		605722FE1E20A10C00286F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605722FC1E20A10C00286F3B /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6032C4881E2BA96100BF6D8A /* MoneyTypePad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyTypePad.xib; sourceTree = "<group>"; };
+		6032C48A1E2BAC9500BF6D8A /* MoneyTypePad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTypePad.swift; sourceTree = "<group>"; };
 		605722F51E20A10C00286F3B /* MoneyUnitConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyUnitConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		605722F81E20A10C00286F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		605722FA1E20A10C00286F3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +60,9 @@
 			children = (
 				605722F81E20A10C00286F3B /* AppDelegate.swift */,
 				605722FA1E20A10C00286F3B /* ViewController.swift */,
+				6032C4881E2BA96100BF6D8A /* MoneyTypePad.xib */,
 				605722FC1E20A10C00286F3B /* Main.storyboard */,
+				6032C48A1E2BAC9500BF6D8A /* MoneyTypePad.swift */,
 				605722FF1E20A10C00286F3B /* Assets.xcassets */,
 				605723011E20A10C00286F3B /* LaunchScreen.storyboard */,
 				605723041E20A10C00286F3B /* Info.plist */,
@@ -124,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6032C4891E2BA96100BF6D8A /* MoneyTypePad.xib in Resources */,
 				605723031E20A10C00286F3B /* LaunchScreen.storyboard in Resources */,
 				605723001E20A10C00286F3B /* Assets.xcassets in Resources */,
 				605722FE1E20A10C00286F3B /* Main.storyboard in Resources */,
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				605722FB1E20A10C00286F3B /* ViewController.swift in Sources */,
+				6032C48B1E2BAC9500BF6D8A /* MoneyTypePad.swift in Sources */,
 				605722F91E20A10C00286F3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
