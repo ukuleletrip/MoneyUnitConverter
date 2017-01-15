@@ -9,26 +9,6 @@
 import UIKit
 
 
-@IBDesignable class MoneyTypePad2: UIView {
-    
-    @IBOutlet weak var languageSelector: UISegmentedControl!
-    @IBOutlet weak var jUnit1Selector: UISegmentedControl!
-    @IBOutlet weak var jUnit2Selector: UISegmentedControl!
-    @IBOutlet weak var eUnit1Selector: UISegmentedControl!
-    @IBOutlet weak var eUnit2Selector: UISegmentedControl!
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    @IBAction func languageChanged(_ sender: Any) {
-    }
-}
-
 class ResultHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -63,11 +43,10 @@ class CurrencyResultsCell: UITableViewCell {
 }
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    @IBOutlet weak var typePad: MoneyTypePad!
     @IBOutlet weak var currencyTitle: UINavigationItem!
     @IBOutlet weak var inputField: UILabel!
     @IBOutlet weak var resultHeader: ResultHeaderView!
-    @IBOutlet weak var typePad: MoneyTypePad!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoneyTypePad" customModule="MoneyUnitConverter" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoneyTypePad" customModule="MoneyUnitConverter" customModuleProvider="target">
+            <connections>
+                <outlet property="eUnit1Selector" destination="6Q7-DB-nKg" id="n4s-Or-B1M"/>
+                <outlet property="eUnit2Selector" destination="k2Q-fW-EzJ" id="DyA-Ac-SE5"/>
+                <outlet property="jUnit1Selector" destination="oY5-Ww-4Eh" id="uP0-bH-XeC"/>
+                <outlet property="jUnit2Selector" destination="fGl-vP-vCy" id="OOl-gs-mje"/>
+                <outlet property="languageSelector" destination="eaY-4P-td2" id="BCq-kV-1hh"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="446" height="231"/>
@@ -43,6 +51,9 @@
                                             <rect key="frame" x="149" y="0.0" width="73.5" height="57"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="9"/>
+                                            <connections>
+                                                <action selector="keyTyped:" destination="-1" eventType="touchUpInside" id="cIH-JK-qDs"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -53,16 +64,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="73.5" height="56.5"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="4"/>
+                                            <connections>
+                                                <action selector="keyTyped:" destination="-1" eventType="touchUpInside" id="qmC-vL-oqC"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fk-eF-rmy">
                                             <rect key="frame" x="74.5" y="0.0" width="73.5" height="56.5"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="5"/>
+                                            <connections>
+                                                <action selector="keyTyped:" destination="-1" eventType="touchUpInside" id="jn7-QB-JRd"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thr-kg-k5p">
                                             <rect key="frame" x="149" y="0.0" width="73.5" height="56.5"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="6"/>
+                                            <connections>
+                                                <action selector="keyTyped:" destination="-1" eventType="touchUpInside" id="Kj2-EQ-iPg"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -73,16 +93,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="73.5" height="57"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="1"/>
+                                            <connections>
+                                                <action selector="keyTyped:" destination="-1" eventType="touchUpInside" id="xjg-5T-aEk"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G3-ds-hXe">
                                             <rect key="frame" x="74.5" y="0.0" width="73.5" height="57"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="2"/>
+                                            <connections>
+                                                <action selector="keyTyped:" destination="-1" eventType="touchUpInside" id="xFc-mF-tDS"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SL4-NI-3ZU">
                                             <rect key="frame" x="149" y="0.0" width="73.5" height="57"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="3"/>
+                                            <connections>
+                                                <action selector="keyTyped:" destination="-1" eventType="touchUpInside" id="Wvp-9S-2wI"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -93,16 +122,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="73.5" height="56.5"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="0"/>
+                                            <connections>
+                                                <action selector="keyTyped:" destination="-1" eventType="touchUpInside" id="5UU-Ri-GQa"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3w-LX-t8K">
                                             <rect key="frame" x="74.5" y="0.0" width="73.5" height="56.5"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="."/>
+                                            <connections>
+                                                <action selector="keyTyped:" destination="-1" eventType="touchUpInside" id="8Ai-wp-i1b"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEO-Fm-ouR">
                                             <rect key="frame" x="149" y="0.0" width="73.5" height="56.5"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <state key="normal" title="C"/>
+                                            <connections>
+                                                <action selector="clearKeyTyped:" destination="-1" eventType="touchUpInside" id="SWw-bD-QB2"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -110,7 +148,77 @@
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIl-ye-jcW">
                             <rect key="frame" x="223.5" y="0.0" width="222.5" height="230"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rnu-ia-oYB">
+                                    <rect key="frame" x="0.0" y="0.0" width="222" height="230"/>
+                                    <subviews>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eaY-4P-td2">
+                                            <rect key="frame" x="8" y="8" width="206" height="36"/>
+                                            <segments>
+                                                <segment title="JP"/>
+                                                <segment title="EN"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="languageChanged:" destination="-1" eventType="valueChanged" id="v86-I8-Uc9"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oY5-Ww-4Eh">
+                                            <rect key="frame" x="8" y="53" width="206" height="35.5"/>
+                                            <segments>
+                                                <segment title=" "/>
+                                                <segment title="百"/>
+                                                <segment title="千"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="jUnit1Changed:" destination="-1" eventType="valueChanged" id="o1l-Dg-UMY"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6Q7-DB-nKg">
+                                            <rect key="frame" x="8" y="97.5" width="206" height="36"/>
+                                            <segments>
+                                                <segment title=" "/>
+                                                <segment title="h"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="eUnit1Changed:" destination="-1" eventType="valueChanged" id="VZQ-Up-3V9"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fGl-vP-vCy">
+                                            <rect key="frame" x="8" y="142.5" width="206" height="35.5"/>
+                                            <segments>
+                                                <segment title=" "/>
+                                                <segment title="万"/>
+                                                <segment title="億"/>
+                                                <segment title="兆"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="jUnit2Changed:" destination="-1" eventType="valueChanged" id="0pc-R7-67Y"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="k2Q-fW-EzJ">
+                                            <rect key="frame" x="8" y="187" width="206" height="36"/>
+                                            <segments>
+                                                <segment title=" "/>
+                                                <segment title="K"/>
+                                                <segment title="M"/>
+                                                <segment title="B"/>
+                                                <segment title="T"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="eUnit2Changed:" destination="-1" eventType="valueChanged" id="4SA-Rx-AeQ"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </subviews>
+                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                </stackView>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Rnu-ia-oYB" secondAttribute="bottom" id="8ki-51-f5N"/>
+                                <constraint firstItem="Rnu-ia-oYB" firstAttribute="leading" secondItem="aIl-ye-jcW" secondAttribute="leading" id="Isw-mn-8rx"/>
+                                <constraint firstAttribute="trailing" secondItem="Rnu-ia-oYB" secondAttribute="trailing" id="fvH-AH-WAb"/>
+                                <constraint firstItem="Rnu-ia-oYB" firstAttribute="top" secondItem="aIl-ye-jcW" secondAttribute="top" id="xzu-yu-yc0"/>
+                            </constraints>
                         </view>
                     </subviews>
                 </stackView>

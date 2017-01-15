@@ -49,7 +49,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m05-Mz-6D9" id="aeL-52-Yb9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0v-FF-l30">
@@ -117,182 +117,12 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="0ue-uz-bm6"/>
                                         </connections>
                                     </tableView>
-                                    <view contentMode="scaleToFill" verticalHuggingPriority="136" verticalCompressionResistancePriority="136" translatesAutoresizingMaskIntoConstraints="NO" id="KYF-Q1-EP6" customClass="MoneyTypePad2" customModule="MoneyUnitConverter" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGW-wn-oZ1" customClass="MoneyTypePad" customModule="MoneyUnitConverter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="467" width="375" height="136"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="lQf-rY-BTR">
-                                                <rect key="frame" x="0.0" y="1" width="375" height="135"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OLG-lp-07e">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="suW-KV-CWG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="33"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAz-Ig-Dk9">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="7"/>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                                <real key="value" value="0.0"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6Z-Up-iWY">
-                                                                        <rect key="frame" x="62.5" y="0.0" width="62" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="8"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfp-KU-Pea">
-                                                                        <rect key="frame" x="125.5" y="0.0" width="61.5" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="9"/>
-                                                                    </button>
-                                                                </subviews>
-                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sbB-sW-Tog">
-                                                                <rect key="frame" x="0.0" y="34" width="187" height="33"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKp-BF-cdN">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="4"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBb-Gq-egf">
-                                                                        <rect key="frame" x="62.5" y="0.0" width="62" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="5"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fau-Fd-G4t">
-                                                                        <rect key="frame" x="125.5" y="0.0" width="61.5" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="6"/>
-                                                                    </button>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="hzl-qC-ydg">
-                                                                <rect key="frame" x="0.0" y="68" width="187" height="33"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-nt-rgi">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="1"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfJ-em-Wkc">
-                                                                        <rect key="frame" x="62.5" y="0.0" width="62" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="2"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHM-rt-LCr">
-                                                                        <rect key="frame" x="125.5" y="0.0" width="61.5" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="3"/>
-                                                                    </button>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="9ux-7r-zzL">
-                                                                <rect key="frame" x="0.0" y="102" width="187" height="33"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4u-pg-Xv3">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="0"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQQ-EA-NXl">
-                                                                        <rect key="frame" x="62.5" y="0.0" width="62" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="."/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXy-Zc-6NE">
-                                                                        <rect key="frame" x="125.5" y="0.0" width="61.5" height="33"/>
-                                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                        <state key="normal" title="C"/>
-                                                                    </button>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddP-6K-FUY">
-                                                        <rect key="frame" x="188" y="0.0" width="187" height="135"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jyb-MQ-FNe">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                                <subviews>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UIR-z4-5Ek">
-                                                                        <rect key="frame" x="8" y="8" width="171" height="34"/>
-                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <segments>
-                                                                            <segment title="JP"/>
-                                                                            <segment title="US"/>
-                                                                        </segments>
-                                                                    </segmentedControl>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6jl-S8-pvV">
-                                                                        <rect key="frame" x="8" y="51" width="171" height="34"/>
-                                                                        <segments>
-                                                                            <segment title="　"/>
-                                                                            <segment title="百"/>
-                                                                            <segment title="千"/>
-                                                                        </segments>
-                                                                    </segmentedControl>
-                                                                    <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hye-Nu-89m">
-                                                                        <rect key="frame" x="8" y="89" width="171" height="1"/>
-                                                                        <segments>
-                                                                            <segment title=" "/>
-                                                                            <segment title="h"/>
-                                                                        </segments>
-                                                                    </segmentedControl>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xxY-qX-udg">
-                                                                        <rect key="frame" x="8" y="94" width="171" height="34"/>
-                                                                        <segments>
-                                                                            <segment title="　"/>
-                                                                            <segment title="万"/>
-                                                                            <segment title="億"/>
-                                                                            <segment title="兆"/>
-                                                                        </segments>
-                                                                    </segmentedControl>
-                                                                    <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RlF-Da-hw8">
-                                                                        <rect key="frame" x="8" y="127" width="171" height="1"/>
-                                                                        <segments>
-                                                                            <segment title=" "/>
-                                                                            <segment title="K"/>
-                                                                            <segment title="M"/>
-                                                                            <segment title="B"/>
-                                                                            <segment title="T"/>
-                                                                        </segments>
-                                                                    </segmentedControl>
-                                                                </subviews>
-                                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                                            </stackView>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstItem="Jyb-MQ-FNe" firstAttribute="leading" secondItem="ddP-6K-FUY" secondAttribute="leading" id="2M0-iX-wQb"/>
-                                                            <constraint firstAttribute="bottom" secondItem="Jyb-MQ-FNe" secondAttribute="bottom" id="YDn-bI-1Xr"/>
-                                                            <constraint firstItem="Jyb-MQ-FNe" firstAttribute="top" secondItem="ddP-6K-FUY" secondAttribute="top" id="kPl-st-5jO"/>
-                                                            <constraint firstAttribute="trailing" secondItem="Jyb-MQ-FNe" secondAttribute="trailing" id="wXU-2O-0Jt"/>
-                                                        </constraints>
-                                                    </view>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="136" id="7bW-FF-Cfv"/>
-                                            <constraint firstAttribute="bottom" secondItem="lQf-rY-BTR" secondAttribute="bottom" id="A49-vg-UJg"/>
-                                            <constraint firstItem="lQf-rY-BTR" firstAttribute="top" secondItem="KYF-Q1-EP6" secondAttribute="top" constant="1" id="EvA-zE-Sjq"/>
-                                            <constraint firstAttribute="trailing" secondItem="lQf-rY-BTR" secondAttribute="trailing" id="ZId-FH-Uug"/>
-                                            <constraint firstItem="lQf-rY-BTR" firstAttribute="leading" secondItem="KYF-Q1-EP6" secondAttribute="leading" id="a9E-MO-jVg"/>
+                                            <constraint firstAttribute="height" constant="136" id="Dl9-Xe-VMX"/>
                                         </constraints>
-                                        <connections>
-                                            <outlet property="eUnit1Selector" destination="hye-Nu-89m" id="krl-OQ-0xc"/>
-                                            <outlet property="eUnit2Selector" destination="RlF-Da-hw8" id="CLh-pz-NdZ"/>
-                                            <outlet property="jUnit1Selector" destination="6jl-S8-pvV" id="YsD-XR-Hes"/>
-                                            <outlet property="jUnit2Selector" destination="xxY-qX-udg" id="vAP-xG-h2B"/>
-                                            <outlet property="languageSelector" destination="UIR-z4-5Ek" id="9V0-8J-Wbk"/>
-                                        </connections>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -321,7 +151,6 @@
                         <outlet property="currencyTitle" destination="GwE-wv-O5J" id="kzy-MW-opp"/>
                         <outlet property="inputField" destination="RdG-qC-iSB" id="ola-8F-U80"/>
                         <outlet property="resultHeader" destination="zR9-wt-b1e" id="0ge-ax-bRO"/>
-                        <outlet property="typePad" destination="KYF-Q1-EP6" id="VhF-uN-wOU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
