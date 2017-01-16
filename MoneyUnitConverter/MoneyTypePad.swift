@@ -8,7 +8,15 @@
 
 import UIKit
 
+@objc protocol MoneyTypePadDelegate {
+    @objc optional func shouldAppendText(text: String)
+    @objc optional func shouldChangeUnit()
+    @objc optional func shouldClear()
+}
+
 @IBDesignable class MoneyTypePad: UIView {
+    
+    @IBOutlet var delegate: MoneyTypePadDelegate?
 
     @IBOutlet weak var languageSelector: UISegmentedControl!
     @IBOutlet weak var jUnit1Selector: UISegmentedControl!
@@ -39,7 +47,8 @@ import UIKit
         v?.frame = self.bounds
     }
 
-    @IBAction func keyTyped(_ sender: Any) {
+    @IBAction func keyTyped(_ sender: UIButton) {
+        self.delegate?.shouldAppendText?(text: (sender.titleLabel?.text)!)
     }
     @IBAction func clearKeyTyped(_ sender: Any) {
     }

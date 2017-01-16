@@ -151,6 +151,7 @@
                         <outlet property="currencyTitle" destination="GwE-wv-O5J" id="kzy-MW-opp"/>
                         <outlet property="inputField" destination="RdG-qC-iSB" id="ola-8F-U80"/>
                         <outlet property="resultHeader" destination="zR9-wt-b1e" id="0ge-ax-bRO"/>
+                        <outlet property="typePad" destination="GGW-wn-oZ1" id="eqj-0O-3cA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

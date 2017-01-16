@@ -42,15 +42,17 @@ class CurrencyResultsCell: UITableViewCell {
     }
 }
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet weak var typePad: MoneyTypePad!
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MoneyTypePadDelegate {
     @IBOutlet weak var currencyTitle: UINavigationItem!
     @IBOutlet weak var inputField: UILabel!
     @IBOutlet weak var resultHeader: ResultHeaderView!
+    @IBOutlet weak var typePad: MoneyTypePad!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        typePad.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
