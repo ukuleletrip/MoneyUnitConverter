@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6008F2BA1E30F48D0040047B /* MoneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F2B91E30F48D0040047B /* MoneyModel.swift */; };
 		6032C4891E2BA96100BF6D8A /* MoneyTypePad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6032C4881E2BA96100BF6D8A /* MoneyTypePad.xib */; };
 		6032C48B1E2BAC9500BF6D8A /* MoneyTypePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6032C48A1E2BAC9500BF6D8A /* MoneyTypePad.swift */; };
 		605722F91E20A10C00286F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605722F81E20A10C00286F3B /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6008F2B91E30F48D0040047B /* MoneyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyModel.swift; sourceTree = "<group>"; };
 		6032C4881E2BA96100BF6D8A /* MoneyTypePad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyTypePad.xib; sourceTree = "<group>"; };
 		6032C48A1E2BAC9500BF6D8A /* MoneyTypePad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTypePad.swift; sourceTree = "<group>"; };
 		605722F51E20A10C00286F3B /* MoneyUnitConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyUnitConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +41,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6008F2B81E30F4620040047B /* MoneyModel */ = {
+			isa = PBXGroup;
+			children = (
+				6008F2B91E30F48D0040047B /* MoneyModel.swift */,
+			);
+			name = MoneyModel;
+			sourceTree = "<group>";
+		};
 		605722EC1E20A10C00286F3B = {
 			isa = PBXGroup;
 			children = (
+				6008F2B81E30F4620040047B /* MoneyModel */,
 				605722F71E20A10C00286F3B /* MoneyUnitConverter */,
 				605722F61E20A10C00286F3B /* Products */,
 			);
@@ -144,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6008F2BA1E30F48D0040047B /* MoneyModel.swift in Sources */,
 				605722FB1E20A10C00286F3B /* ViewController.swift in Sources */,
 				6032C48B1E2BAC9500BF6D8A /* MoneyTypePad.swift in Sources */,
 				605722F91E20A10C00286F3B /* AppDelegate.swift in Sources */,

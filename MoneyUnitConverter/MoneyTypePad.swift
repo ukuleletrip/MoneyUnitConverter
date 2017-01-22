@@ -51,6 +51,7 @@ import UIKit
         self.delegate?.shouldAppendText?(text: (sender.titleLabel?.text)!)
     }
     @IBAction func clearKeyTyped(_ sender: Any) {
+        self.delegate?.shouldClear?()
     }
 
     @IBAction func languageChanged(_ sender: Any) {

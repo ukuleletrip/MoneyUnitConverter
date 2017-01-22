@@ -69,6 +69,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.flagImage.image = UIImage(named: "Australia")
         return cell
     }
+    func shouldAppendText(text: String) {
+        inputField.text = text
+    }
+    func shouldChangeUnit() {
+        
+    }
+    func shouldClear() {
+        inputField.text = "0"
+    }
 
     @IBAction func goSettings(_ sender: Any) {
     }
